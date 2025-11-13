@@ -1,9 +1,24 @@
+# Force GitHub to treat everything as Dart
 *.dart linguist-language=Dart
-*.java linguist-vendored
-*.xml linguist-vendored
+
+# Ignore non-Dart platform files
+android/** linguist-vendored
+ios/** linguist-vendored
+windows/** linguist-vendored
+linux/** linguist-vendored
+macos/** linguist-vendored
+web/** linguist-vendored
+
+# Ignore build files and configs
+*.cmake linguist-vendored
 *.gradle linguist-vendored
+*.xml linguist-vendored
+*.json linguist-vendored
+*.yaml linguist-vendored
 *.kt linguist-vendored
 *.cpp linguist-vendored
 *.h linguist-vendored
 *.m linguist-vendored
 *.swift linguist-vendored
+*.bat linguist-vendored
+*.sh linguist-vendored
